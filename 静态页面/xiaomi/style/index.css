@@ -1,0 +1,181 @@
+/* CSS Document */
+
+#mistar,#newsp,#like,#techan,#book,#miui,#hot{width:1240px;margin: 30px auto ;overflow:hidden;}
+#banner{ float:left; width:992px; overflow:hidden}
+.bannerimg{ width:992px; height:420px; background:url(../image/mpad515.jpg) no-repeat;border-bottom:1px solid #DFDFDF}
+.bannerimg:hover .bannerimg_l{background:url(../image/icon-slides.png) no-repeat -84px center}
+.bannerimg:hover .bannerimg_r{background:url(../image/icon-slides.png) no-repeat -125px center}
+.bannerimg_l,.bannerimg_r{ width:41px; height:100%; cursor:pointer}
+.bannerimg_l{ float:left;}
+.bannerimg .bannerimg_l:hover{ background:url(../image/icon-slides.png) no-repeat left center}
+.bannerimg_r{float:right;}
+.bannerimg .bannerimg_r:hover{ background:url(../image/icon-slides.png) no-repeat -42px center}
+
+.banner_bottom{ height:170px; overflow:hidden; border-bottom:1px solid #dfdfdf }
+.banner_bottom_list1{ width:329px; height:170px; overflow:hidden;float:left;border-right:1px solid #dfdfdf }
+.banner_bottom_list { width:330px;float:left; border-right:1px solid #dfdfdf }
+
+/*----------------------------小米明星单品---------------------------------*/
+#mistar{ height:343px; }
+#mistar h2{ font-size:18px; color:#333333; height:33px;}
+
+.mistar_bor{border:1px solid #dfdfdf;}
+.mistar{ width:1238px; height:308px; overflow:hidden; }
+.mistar_w{ width:1240px;}
+.mistar_list{ width:309px; height:310px; float:left; display:block; border-right:1px solid #dfdfdf}
+.mistar_list ul{ height:290px;text-align:center; padding:4px;  border:6px solid #fff}
+.mistar_list ul:hover{ border:6px solid #eee}
+.mistar_list ul a{  display:block;}
+.mistar_list ul a img{width:220px; height:220px; margin:0 auto}
+.mistar_name a{ font-size:16px; color:#000; line-height:32px;}
+.mistar_name a:hover{ color:#f40}
+.mistar_con{ color:#8C8C8C}
+.noborder{ border-right:none}
+
+/*-----------------------------新品上架--------------------------------------*/
+#newsp{ height:965px; margin:0 auto 30px ; }
+#newsp h2,#like h2,#techan h2{ height:33px;}
+#newsp h2 span,#like h2 span{ float:left; line-height:33px;font-size:18px; color:#333333;}
+#newsp h2 a,#like h2 a{ float:right; line-height:33px;}
+.newsp_bor{ border:1px solid #dfdfdf}
+.newsp{ width:1238px; height:929px; overflow:hidden}
+
+/*新品上架左边*/
+.newsp_l{ width:930px; height::929px;  float:left;overflow:hidden}
+.newsp_l1{ width:619px; float:left;overflow:hidden;border-bottom:1px solid #dfdfdf; border-right:1px solid #dfdfdf;}
+.newsp_l1_con{ width:620px; }
+
+.newsp_lis2{ width:309px; height:310px; float:left; display:block; border-right:1px solid #dfdfdf}
+.newsp_list2 { height:290px; padding:4px;  border:6px solid #fff}
+.newsp_list2 span{padding-left:25px}
+.newsp_list2 span a{ padding-left:25px}
+.newsp_list2:hover{ border:6px solid #eee}
+.newsp_list2 a{  display:block;}
+.newsp_list2 a img{width:220px; height:220px; margin:0 auto}
+.newsp_name a{ font-size:14px; color:#000; line-height:25px;}
+.newsp_name a:hover{ color:#f40}
+.newsp_l2{ border-bottom:1px solid #dfdfdf; float:left}
+
+.newsp_list3 { height:134px;_display:inline; padding:4px;  border:6px solid #fff}
+.newsp_list3 p{ width:130px; height:60px; font-size:14px; color:#333333;  float:left; padding-left:20px;}
+.newsp3_name a{ font-size:14px; color:#000; line-height:25px;}
+.newsp3_name a:hover{ color:#f40}
+.newsp_list3 a img{width:135px; height:135px; float:right}
+.newsp_list3:hover{ border:6px solid #eee}
+.newsp3_bor{_height:134px; overflow:hidden; border-bottom:1px solid #dfdfdf}
+
+/*新品上架右边*/
+.newsp_r{ float:left}
+.
+.newsp_r1{ height:380px;}
+
+.newsp_r1_list1{ height:126px; width:308px; overflow:hidden;border-bottom:1px solid #dfdfdf}
+.newsp_r1_list1:hover{ cursor:pointer}
+.newsp_r1_list1 p{ padding-left:30px; width:150px; float:left; }
+.newsp_r1_list1 span{ width:70px; height:20px;  display:block; text-align:center;  color:#fff;background:#F32F39}
+.newsp_r1_list1 strong{ font-size:18px; color:#3c3c3c;}
+.newsp_r1_list1 code{ color:#f40}
+.newsp_r1_list1 img { padding-top:21px; float:left}
+.newsp_top{ padding-top:30px;}
+
+.newsp_r2{ padding:30px 0 0 30px; height:249px; border-bottom:1px solid #dfdfdf }
+.newsp_r2 h3{ color:#3C3C3C; font-size:18px;}
+.newsp2_num{ width:246px; height:38px; margin-top:15px; border:1px solid #dfdfdf}
+.newsp2_num input{height:38px; padding-left:10px; font-size:14px; color:#8C8C8C; line-height:38px;}
+.newsp2_mone{ width:246px; height:38px; margin-top:15px; border:1px solid #dfdfdf}
+.newsp2_mone input{height:38px; padding-left:10px; font-size:14px; color:#8C8C8C; line-height:38px;}
+.newsp_r2 code{ color:#8c8c8c; line-height:38px;}
+.newsp_r2 code strong{ font-size:14px;}
+.newsp_btn{ width:246px; height:38px; color:#fff; line-height:38px; text-align:center; background-color:#DCDFE4}
+.newsp_btn:hover{ background-color:#f40} 
+
+.newsp_r3{padding:30px 0 0 30px; }
+.newsp_r3 h3{ color:#3C3C3C; font-size:18px;}
+.newsp_r3 ul{ width:248px; overflow:hidden}
+.newsp_r3 ul li{ height:45px; line-height:48px;overflow:hidden; border-bottom:1px solid #dfdfdf}
+.newsp_r3 ul li a:hover{color:#f40; }
+.newsp_r3 ul li span{ padding-right:8px}
+.newsp_r3 ul li code{ float:right;}
+.newsp_r3 .noborderbottom{ border-bottom:0}
+
+.newsp2_mone .sanjiao{display:block; float:right; margin:18px 20px 0 0; border-width:6px;	 border-style:solid dashed dashed  dashed;  /*上是实线  其余的是虚线 为了照顾ie6*/ border-color: #6D6D6D transparent transparent transparent; /*transparent透明的意思*/	 height:0; 	 width:0;	 font-size:0; /*照顾ie6 去掉大小*/}
+.newsp2_mone .sanjiao:hover{ cursor:pointer;border-color: #f40 transparent transparent transparent; }
+/*-----------------------------热评产品----------------------------------*/
+#hot{ height:445px;margin:0 auto 30px; overflow:hidden; }
+#hot h2{height:33px;}
+#hot h2 span{ float:left; line-height:33px;font-size:18px; color:#333333;}
+#hot h2 a{ float:right; line-height:33px;} 
+#hot .hot_img{ text-indent:5em; background:url(../image/icon-stat.png) no-repeat 25px top }
+#hot .hot_img span{ color:#8C8C8C}
+/*-----------------------------大家都喜欢----------------------------------*/
+#like{ height:660px;  margin:0 auto 30px ; overflow:hidden; }
+.like_bor{ border:1px solid #dfdfdf}
+.like{ width:1238px; height:619px; overflow:hidden}
+.like_left{width:930px;  height:619px;  float:left; overflow:hidden;}
+.like_left1{ width:619px; float:left;overflow:hidden;border-bottom:1px solid #dfdfdf; border-right:1px solid #dfdfdf;}
+.like_left1:hover{ cursor:pointer}
+
+.like_right{width:308px; overflow:hidden; float:left}
+.like_r1{  height:103px; font-size:24px; text-align:center; line-height:103px; border-bottom:1px solid #dfdfdf}
+.like_r1 h3 span{ color:#f40}
+.like_r2{  height:80px;  padding:22px 0 0 33px;border-bottom:1px solid #dfdfdf}
+.like_r2 span{ font-size:40px; color:#f40; float:left}
+.like_r2 p{ width:145px; float:left ; margin-top:5px; padding-left:10px;}
+.like_r2 p a:hover{ color:#f40;}
+.like_r2_img{ float:left}
+.like_bor .noborderbottom{ border-bottom:0}
+/*-----------------------------特价商品-------------------------------------*/
+
+#techan{ height:344px; margin:0 auto 30px; overflow:hidden; }
+#techan h2{ line-height:33px;font-size:18px; color:#333333;}
+.techan_bor{border:1px solid #dfdfdf}
+.techan{ width:1238px; height:309px;overflow:hidden;  overflow:hidden;}
+.techan_w{ width:1240px;}
+
+.techan_g{ height:270px; padding-top:23px;   font-family:"微软雅黑"}
+.techan_g span{ display:block; height:30px;overflow:hidden; clear:both}
+.techan_g code{ font-size:30px; float:left}
+.techan_g  b{ font-weight:normal; color:#8C8C8C; font-size:14px } 
+
+/*-------------------------------图书-----------------------------------------*/
+#book{  height:447px;margin:0 auto 30px; overflow:hidden; }
+#book h2{ height:33px; color:#333333;}
+#book h2 span{float:left; line-height:33px;font-size:18px; color:#333333;}
+#book h2 a{ float:right; line-height:33px;}
+.book_bor{ border:1px solid #dfdfdf}
+.book{width:1238px; height:410px; overflow:hidden}
+.book_w{ width:1240px}
+.book_list{ width:309px; height:410px; float:left; display:block; border-right:1px solid #dfdfdf}
+.book_list1{ height:390px;padding:4px;  border:6px solid #fff}
+.book_list1 code{ display:block; line-height:12px; padding-left:30px}
+.book_list1 code a{ padding-top:30px; font-size:14px; color:#3c3c3c} 
+.book_list1 code a:hover{ color:#f40}
+.book_list1:hover{ border:6px solid #eee}
+.book_list1 a{  display:block;}
+.book_list1 a img{width:220px; height:220px; margin:0 auto}
+.book_jj{ width:289px; overflow:hidden }
+.book_jj_p1{width:289px; height:12px}
+.book_jj_p1 .sanjiao{  display:block; margin:0 auto;	 border-width:6px;	 border-style: dashed dashed solid dashed;  /*上是实线  其余的是虚线 为了照顾ie6*/ border-color: transparent transparent #f3f3f3 transparent; /*transparent透明的意思*/	 height:0; 	 width:0;	 font-size:0; /*照顾ie6 去掉大小*/}
+.book_jj_p2{ width:261px;height:30px; color:#6D6D6D; padding:13px 14px; background-color:#F3F3F3}
+
+
+/*--------------------------------miui----------------------------------------*/
+#miui{ height:370px;margin:0 auto 30px; overflow:hidden; font-family:"微软雅黑" }
+#miui h2{ height:33px; color:#333333;}
+#miui h2 span{float:left; line-height:33px;font-size:18px; color:#333333;}
+#miui h2 a{ float:right; line-height:33px;}
+.miui{ padding-top:20px}
+.miui span{ display:block; font-size:14px; padding-bottom:12px  }
+#miui .newsp_list2{ height:273px}
+ 
+
+
+
+
+
+
+
+
+
+
+

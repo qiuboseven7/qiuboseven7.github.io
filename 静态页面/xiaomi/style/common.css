@@ -1,0 +1,112 @@
+﻿/*css reset*/
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0; border:0}
+body,button,input,select,textarea{font:12px arial,\5b8b\4f53}
+h1,h2,h3,h4,h5,h6, p{font-size:100%; font-weight:lighter; font-family:微软雅黑;color:#8C8C8C}
+address,cite,dfn,em,var{font-style:normal}
+form{display:inline}
+small{font-size:12px}
+ul,ol{list-style:none}
+a{text-decoration:none; color:#8C8C8C;font-family:"微软雅黑"}
+a:hover{ color:#333333; text-decoration:none}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+legend{color:#000}
+fieldset,img{border:0;-ms-interpolation-mode:bicubic}
+button,input,select,textarea{font-size:100%;font-weight:lighter;}
+table{border-collapse:collapse;border-spacing:0}
+img{ display:block}
+
+/*common*/
+.clear{clear:both}
+.clearfix{zoom:1}
+.clearfix:after{content:'\20';display:block;height:0;clear:both}
+body{ background-color:#FAFAFA}
+
+
+/*-------------------------------header开始----------------------------*/
+#head{ width:100%; height:147px; overflow:hidden; }
+.head{ border-bottom:1px solid #DFDFDF; height:36px;}
+.head_con{ width:1240px; overflow:hidden; margin:0 auto}
+.head_con li{ line-height:36px; float:left;color:#DFDFDF}
+.head_l{ float:left}
+.head_l span,.head_r span{ margin: 0 10px}
+.head_r{ float:right}
+
+.logo{ width:1240px; height:85px;padding-top:25px; margin:0 auto}
+.logo h1{ float:left; width:70px; height:70px;}
+.logo_r { width:560px;float:right;}
+.logo_r_time{ height:16px; overflow:hidden; text-align:right }
+.logo_r_time a{ padding-left:20px;background:url(../image/icon-open-buy.png) no-repeat left top;}
+.logo_r_time a:hover{ color:#f40; background-position:0 -16px}
+.soso{ margin-top:19px; text-align:right}
+.soso_bor{ width:422px; height:38px; float:left; border:1px solid #DFDFDF}
+.soso_bor input{ float:left; height:38px; padding-left:10px; font-size:14px; color:#DFDFDF; line-height:38px; width:207px;}
+.soso_bor  p { float:left}
+.soso_bor  p a{ padding:2px 5px; background-color:#F3F3F3; line-height:38px}
+.soso_bor  p a:hover{ background-color:#dfdfdf}
+.soso_bor button{ float:right; cursor:pointer; width:38px; height:38px; background:url(../image/fang.png) no-repeat center center; border-left:1px solid #dfdfdf}
+.so_btn{ width:126px; height:40px; float:left; margin-left:10px; text-align:center; background-color:#FFDB3D; cursor:pointer}
+.so_btn span{ line-height:40px; background:url(../image/xcar.png) no-repeat left center; padding-left:18px; font-size:14px}
+
+
+/*-------------------------------nav开始----------------------------*/
+#nav{ width:1240px; margin: 0 auto; overflow:hidden; }
+.nav{ width:248px; overflow:hidden; float:left}
+.nav_l{  width:248px; height:50px; background-color:#FF4A00; cursor:pointer}
+.nav_l h2{ color:#fff; font-size:18px; line-height:50px; padding-left:20px;}
+.nav_display{ width:248px; height:592px; }
+.nav_displayli{ height:33px; padding:20px 10px 20px 20px;_padding:16px 10px 16px 20px;vertical-align:middle; border:1px solid #dfdfdf; border-top:none; }
+.nav_displayli:hover{border-left:3px solid #f40; padding-left:18px}
+.nav_displayli h3{ }
+.nav_displayli h3 a{ font-size:14px; color:#f40}
+.nav_lia a{ padding-right:5px;  display:inline-block}
+
+.nav_r{ float:left; width:992px; overflow:hidden;  background-color:#404144}
+.nav_r li{ float:left; }
+.nav_r li a{ height:50px; padding:0 23px; line-height:50px;  color:#fff; font-size:18px; display:inline-block }
+.nav_r li a:hover{background-color:#333; color:#fff}
+
+/*-------------------------------footer开始----------------------------*/
+#footer{ width:1240px; margin:0 auto; overflow:hidden; font-family:"微软雅黑"}
+.footer1{ height:132px; border-bottom:1px solid #dfdfdf}
+.footer1 li{ width:242px; line-height:26px;height:132px; float:left; text-align:center}
+.footer1 li:hover{ cursor:pointer}
+.footer1 li strong{ font-size:18px; font-weight:400}
+.footer1 li span{ color:#3c3c3c}
+.footer1 li img{ margin:0 auto;}
+
+.footer2{ overflow:hidden;  border-bottom:1px solid #dfdfdf}
+.footer2 dl{ width:165px; float:left; display:inline; margin:40px 0; border-right:1px solid #dfdfdf}
+.footer2 dt{ font-size:18px; height:41px}
+.footer2 dd{ line-height:27px }
+.footer2 dd a:hover{ color:#f40}
+.footer2 .margin{ margin-left:30px;}
+
+.foot2_p{ width:270px; padding:40px 0; float:right;text-align:center; overflow:hidden;}
+.foot2_p1 strong{ font-size:26px;}
+.foot2_p1 span{ line-height:20px}
+.foot2_a{font-size: 12px; display:inline-block; height: 28px;line-height: 28px;width: 118px; margin-top:18px; color:#fff; background-color:#f40}
+.foot2_a:hover{ background-color:#ee330a; color:#fff}
+
+.footer3{ clear:both; height:80px; margin:40px 0;}
+.foot3_l{ float:left; width:700px; color:#3c3c3c}
+.foot3_l  p{ line-height:20px;}
+.foot3_l a{ color:#3c3c3c; font-size:12px;}
+.foot3_l a:hover{ color:#f40}
+.foot3_l a img { height:20px; margin-top:25px; float:left}
+
+.foot3_r{ float:right;   color: #8C8C8C;font-size: 12px;width: 200px; height:38px; border:1px solid #dfdfdf}
+.foot3_r input{line-height:38px; height:38px;padding-left:10px; color:#8C8C8C}
+.foot3_r input:hover{ color:#f40}
+
+.foot3_r .sanjiao{display:block; float:right; margin:18px 20px 0 0; border-width:6px;	 border-style:solid dashed dashed  dashed;  /*上是实线  其余的是虚线 为了照顾ie6*/ border-color: #6D6D6D transparent transparent transparent; /*transparent透明的意思*/	 height:0; 	 width:0;	 font-size:0; /*照顾ie6 去掉大小*/}
+.foot3_r .sanjiao:hover{ cursor:pointer;border-color: #f40 transparent transparent transparent; }
+
+
+
+
+
+
+
+
+

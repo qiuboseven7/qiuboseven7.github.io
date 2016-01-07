@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin:0; padding:0; list-style:none;}
+.fl{float:left;}
+.fr{float:right;}
+a{text-decoration:none;}
+input{outline:none;}
+
+.center{
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-width/2;
+	margin-top:-height/2;
+}
+
+body{font:14px/1.5 tahoma,arial,sans-serif;}

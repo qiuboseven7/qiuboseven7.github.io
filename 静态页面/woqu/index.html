@@ -1,0 +1,468 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> 我趣旅行网</title>
+<link rel="stylesheet" type="text/css" href="style/index.css"/>
+<link rel="shortcut icon" href="favicon.ico"/>
+<script type="text/javascript">
+	   	function dislogin(){
+
+   			document.getElementById("login").style.display="block";
+   		}
+   		function loginwu(){
+   			document.getElementById("login").style.display="none";
+   		}
+
+</script>
+<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".wq_product_item").mouseover(function(){
+				$(this).find(".wq_hide_tips").show();
+			});
+		$(".wq_product_item").mouseout(function(){
+				$(this).find(".wq_hide_tips").hide();
+			});
+		$(".wq_product_item").mouseover(function(){
+				$(this).children('div').css("backgroundColor","#09808b");
+			});
+			$(".wq_product_item").mouseout(function(){
+				$(this).children('div').css("backgroundColor","#ecf8f4");
+			});
+			$(".wq_product_item").mouseover(function(){
+				$(this).css("color","#fff");
+			});
+			$(".wq_product_item").mouseout(function(){
+				$(this).css("color","#333");
+			});
+			$("#searchProduct").click(function(){
+				$(this).siblings().fadeToggle();	
+			});
+			$(".wq_mycart_list").click(function(){
+				$(this).children('ul').fadeToggle();	
+			});
+			$('#searchInput').bind({ 
+				focus:function(){ 
+				if (this.value == this.defaultValue){ 
+				this.value=""; 
+				} 
+				}, 
+				blur:function(){ 
+				if (this.value == ""){ 
+				this.value = this.defaultValue; 
+				} 
+				} 
+				}); 
+			$(window).scroll(function(e){
+
+				var juantop=$(document).scrollTop();
+				if(juantop>=600)
+				{
+					$(".wq_to_top").fadeIn();
+				}
+				else{
+					$(".wq_to_top").fadeOut();
+				}
+			});
+			$(".wq_to_top").click(function(){
+				$("html,body").stop().animate({scrollTop:0}, 500)
+			});
+		$(".banner ol li").mouseover(function(event) {
+				var aa=$(this).index();
+				$(".banner ul li").eq(aa).fadeIn().siblings().hide();
+				$(this).addClass('wq_btn_active').siblings().removeClass('wq_btn_active');
+				$key=aa+1;
+                    if($key==5){
+                        $key=0;
+                    }
+			});
+			var $key=1;
+			var time=setInterval(autoplay, 4000);
+			function autoplay(){
+				$(".banner ul li").eq($key).fadeIn().siblings().fadeOut();
+				$(".banner ol li").eq($key).addClass('wq_btn_active').siblings().removeClass('wq_btn_active');
+				console.log($key);
+				$key++;
+				if($key>4){
+					$key=0;
+				}
+			}
+		$(".banner").hover(function() {
+          	clearInterval(time);// 当鼠标经过大盒子的时候box 就清除定时器
+          }, function() {
+          	clearInterval(time);  //个人经验  开启定时器之前，首先清除定时器
+          	time=setInterval(autoplay,4000); //开启定时器   注意带上定时器名
+          });
+
+	});
+
+</script>
+</head>
+
+<body>
+	<header id="wq_header">
+	<div class="wq_header_wrapper container wq_clearfix">
+		<a href="#" id="wq_logo">
+        <i class="wq_logo_home_icon" style="display: none;"></i>
+        </a>
+		<div class="wq_header_nav_outter_wrapper">
+			<ul id="catalogue_ul" class="wq_header_nav wq_clearfix">
+				<li id="localjoin_cata" class="wq_nav_main"><a href="#">当地参团</a></li>
+				<li id="mustactive_cata" class="wq_nav_main"><a href="#">个性玩法</a></li>
+				<li id="car_cata" class="wq_nav_main"><a href="#">自驾租车</a></li>
+				<li id="traffic_cata" class="wq_nav_main"><a href="#">接送服务</a></li>
+				<li><div class="wq_header_divide"></div></li>
+				<li id="visa_cata" class="wq_nav_prepare"><a href="#">签证</a></li>
+				<li id="insurance_cata" class="wq_nav_prepare"><a href="#">保险</a></li>
+				<li style="margin-right: 30px;" id="sim_cata" class="wq_nav_prepare"><a href="#">电话卡</a></li>
+				<li class="wq_header_phone" id="headPhone" onmouseover="dislogin()" onmouseout="loginwu()">
+					<p class="">400-661-5757</p>
+					<ul class="subList phoneList" style="display: none;" id="login">
+						<li style="padding: 10px 0;">
+                        中国：86-400-661-5757</li>
+						<li>美国：1-855-9678-266</li>
+					</ul>
+				</li>
+						<li class="wq_nav_op"><a href="#">快速查询订单</a></li>
+						<li class="wq_right_divide">|</li>
+						<li class="wq_nav_op"><a href="#">注册</a></li>
+						<li class="wq_right_divide">|</li>
+						<li class="wq_nav_op"><a href="#">登录</a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+	<div class="banner">
+    	<ul class="banner-in">
+        	<li class="banner-in-1"></li>
+        	<li class="banner-in-2"></li>
+        	<li class="banner-in-3"></li>
+        	<li class="banner-in-4"></li>
+        	<li class="banner-in-5"></li>
+        </ul>
+        <ol class="wq_btn_list wq_clearfix" style="height: 16px; left: 1008.5px;">
+        <li class="wq_btn_item wq_btn_active" style="width: 16px; height: 16px;">
+        1</li>
+        <li class="wq_btn_item " style="width: 16px; height: 16px;">
+        2</li>
+        <li class="wq_btn_item" style="width: 16px; height: 16px;">
+        3</li>
+        <li class="wq_btn_item" style="width: 16px; height: 16px;">
+        4</li>
+        <li class="wq_btn_item" style="margin-right: 0px; width: 16px; height: 16px;">
+        5</li>
+        </ol>
+    </div>
+    <div class="wq_body_wrapper container">
+    	<div class="wq_our_product">
+        	<ul class="wq_op_list wq_clearfix">
+            <li class="wq_op_count">
+            	有<span class="wq_opc_num">21915</span>
+            	<span class="wq_opc_unit">位</span>
+				用户享受了我们的服务
+            </li>
+            <li class="wq_op_divide"></li>
+            <li class="wq_op_item">
+            	<span class="wq_op_num">1000</span>多条当地参团
+            </li>
+            <li class="wq_op_divide"></li>
+            <li class="wq_op_item">
+            	<span class="wq_op_num">1300</span>多条个性玩法
+            </li>
+            <li class="wq_op_divide"></li>
+            <li class="wq_op_item">
+            	<span class="wq_op_num">2000</span>多个租车产品
+            </li>
+            <li class="wq_op_divide"></li>
+            <li class="wq_op_item">
+            	<span class="wq_op_num">120</span>个接送服务
+            </li>
+            </ul>
+        </div>
+        <div class="wq_trip_plan wq_clearfix">
+        	<div class="wq_tp_left">
+            	<em></em>
+				<h1>行前准备</h1>
+				<p>东西都一样，价格咱最低。去美国大部分用户都会准备这些</p>
+                <div class="wq_prepare_items wq_items wq_clearfix">
+                <a  target="_self" href="#">
+                <i class="visa_i"></i>签 证
+                </a>
+                <a  target="_self" href="#">
+                <i class="sim_i"></i>电话卡
+                </a>
+                <a  target="_self" href="#">
+                <i class="insurance_i"></i>保 险
+                </a>
+                </div>
+            </div>
+            <div class="wq_tp_right">
+            	<h1>选择出行方式</h1>
+            	<div class="wq_clearfix">
+                	<div class="wq_half_self">
+                    <dl>
+                    <dt>半自助游</dt>
+					<dd>省时 · 省力 · 省心</dd>
+                    </dl>
+                    <div class="wq_items wq_clearfix">
+                    <a target="_self" href="#"><i class="team_i"></i>当地参团
+                    </a>                    </div>
+                    </div>
+                    <div class="wq_all_self">
+                    <dl>
+						<dt>纯自助游</dt>
+						<dd>最齐全&nbsp;·&nbsp;最自由&nbsp;·&nbsp;最精彩</dd>
+					</dl>
+                    <div class="wq_items wq_clearfix">
+						<a target="_self" href="#" class="rentcar_a"><i class="rentcar_i"></i>自驾租车</a>
+						<a target="_self" href="#"><i class="traffic_i"></i>接送服务</a>
+						<a target="_self" href="#"><i class="activity_i"></i>个性玩法</a>
+							</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wq_ft_banner_wrapper">
+				<a target="_blank" href="#" class="wq_first_time_banner"></a>
+		</div>
+        <div class="wq_favorable_section">
+        	<div class="wq_fs_top wq_clearfix">
+            	<div class="wq_fst_left wq_clearfix">
+                <a class="wq_product_item wq_clearfix" target="_self" href="# " title="查看产品详情" style="color: rgb(51, 51, 51);">
+							<div class="wq_pimg_wrapper">
+								<img width="320" height="340" src="images/index01.jpg" class="lazy" style="display: block;">
+								<div class="wq_hide_tips" style="display: none;"><p>四大国家公园+泛舟包伟湖。从4月1日起，该行程特别惠赠3餐精美早餐，百元大礼包，保证入住黄石小木屋。</p></div>
+							</div>
+							<div class="wq_pinfo_wrapper" style="background-color: rgb(236, 248, 244);">
+								<p class="wq_ptitle">7日&lt;畅玩&gt;黄石公园、大峡谷、盐湖城超值游(洛杉矶 /拉斯维加斯出发和结束)</p>
+								<p class="wq_pprice"><span class="wq_price_num">$338</span><span class="wq_price_start">/人起</span>市场价：$355</p>
+								<i class="wq_pdetail_btn"></i>
+							</div>
+						</a>
+                </div>
+            	<div class="wq_fst_right">
+                <div class="wq_fstr_top">
+                我趣特聘最精明的中国大妈，精挑细比、严格把关
+				<em></em>
+                </div>
+                <div class="wq_fstr_bottom wq_clearfix">
+            	<a class="wq_product_item wq_clearfix" target="_self" href="#" title="查看产品详情" style="color: rgb(51, 51, 51);">
+								<div class="wq_pimg_wrapper">
+									<img width="320" height="240"src="images/index02.jpg" class="lazy" style="display: block;">
+									<div class="wq_hide_tips" style="display: none;"><p>面面俱到的美西全览之旅。从4月1日起，行程中的洛杉矶酒店提供免费早餐和免费WIFI。</p></div>
+								</div>
+								<div class="wq_pinfo_wrapper" style="background-color: rgb(236, 248, 244);">
+									<p class="wq_ptitle">8日&lt;畅玩&gt;拉斯维加斯、大峡谷、优胜美地超值游(洛杉矶出发，洛杉矶结束)</p>
+									<p class="wq_pprice"><span class="wq_price_num">$414</span><span class="wq_price_start">/人起</span>市场价：$435</p>
+									<i class="wq_pdetail_btn"></i>
+								</div>
+							</a>
+                <a style="margin-left: 20px;" class="wq_product_item wq_clearfix" target="_self" href="#" title="查看产品详情">
+								<div class="wq_pimg_wrapper">
+									<img width="320" height="240"src="images/index03.jpg" class="lazy" style="display: block;">
+									<div class="wq_hide_tips"><p>美东地标之旅+全程入住豪华酒店。3.15-4.15期间华盛顿樱花节，行程新增华盛顿特区樱花大赏，不可错过。</p></div>
+								</div>
+								<div class="wq_pinfo_wrapper">
+									<p class="wq_ptitle">6日&lt;深度&gt;纽约、波士顿、尼亚加拉大瀑布豪华游(纽约出发，波士顿/ 纽约结束)</p>
+									<p class="wq_pprice"><span class="wq_price_num">$199</span><span class="wq_price_start">/人起</span>市场价：$209</p>
+									<i class="wq_pdetail_btn"></i>
+								</div>
+							</a>
+            </div>
+                </div>
+            </div>
+        	<div class="wq_fs_bottom wq_clearfix">
+					<a class="wq_product_item wq_product_wide wq_clearfix" target="_self" href="#" title="查看产品详情" style="color: rgb(51, 51, 51);">
+						<div class="wq_pimg_wrapper">
+							<img width="660" height="240" src="images/index04.jpg" class="lazy" style="display: block;">
+							<div class="wq_hide_tips" style="display: none;"><p>微风、阳光、海水、沙滩，享受夏威夷的独有浪漫。特别优惠：费用独家包含檀香山到火山大岛或茂宜岛的往返机票。</p></div>
+						</div>
+						<div class="wq_pinfo_wrapper" style="background-color: rgb(236, 248, 244);">
+							<p class="wq_ptitle">6日&lt;畅玩&gt;夏威夷火山大岛/茂宜岛、欧胡岛超值游(檀香山出发，檀香山结束)</p>
+							<p class="wq_pprice"><span class="wq_price_num">$781</span><span class="wq_price_start">/人起</span>市场价：$820</p>
+							<i class="wq_pdetail_btn"></i>
+						</div>
+					</a>
+					<a style="margin-left: 20px; color: rgb(51, 51, 51);" class="wq_product_item wq_clearfix" target="_self" href="#" title="查看产品详情">
+						<div class="wq_pimg_wrapper">
+							<img width="320" height="240" src="images/index05.jpg" class="lazy" style="display: block;">
+							<div class="wq_hide_tips" style="display: none;"><p>天涯海角日落之旅，感受迈阿密火一样的热情和日落唯美的海湾风光。该行程几乎将南佛罗里达核心景点一网打尽。</p></div>
+						</div>
+						<div class="wq_pinfo_wrapper" style="background-color: rgb(236, 248, 244);">
+							<p class="wq_ptitle">5日&lt;畅玩&gt;迈阿密、西礁岛、西棕榈滩超值游(迈阿密出发，迈阿密结束)</p>
+							<p class="wq_pprice"><span class="wq_price_num">$465</span><span class="wq_price_start">/人起</span>市场价：$488</p>
+							<i class="wq_pdetail_btn"></i>
+						</div>
+					</a>
+				</div>
+            
+        </div>
+        <div class="funny">
+        	<div class="fus_title  wq_clearfix">
+            <h1 class="wq_fus_title">最有趣的产品</h1>
+            <span class="wq_fus_desc">玩转海陆空，颠覆你想象</span>
+<a class="wq_fus_more wq_l_orange" href="#">+ 查看更多</a>
+            
+            </div>
+        	<div class="fus_top  wq_clearfix">
+            <a class="wq_product_item wq_clearfix" target="_self" href="#" title="查看产品详情" style="color: rgb(51, 51, 51);">
+						<div class="wq_pimg_wrapper">
+							<img width="320" height="240"src="images/index06.jpg" class="lazy" style="display: block;">
+							<div class="wq_hide_tips" style="display: none;"><p>来体验独特的鸭船之旅吧！搭乘水陆两用的鸭船，享受90分钟的旅程，感受不一样的华盛顿风光。</p></div>
+						</div>
+						<div class="wq_pinfo_wrapper" style="background-color: rgb(236, 248, 244);">
+							<p class="wq_ptitle">华盛顿特区鸭船之旅，水陆两栖的绝佳体验</p>
+							<p class="wq_pprice"><span class="wq_price_num">$39</span><span class="wq_price_start">起</span></p>
+							<i class="wq_pdetail_btn"></i>
+						</div>
+					</a>
+            <a style="margin-left: 20px; color: rgb(51, 51, 51);" class="wq_product_item wq_clearfix" target="_self" href="#" title="查看产品详情">
+						<div class="wq_pimg_wrapper">
+							<img width="320" height="240" src="images/index07.jpg" class="lazy" style="display: block;">
+							<div class="wq_hide_tips" style="display: none;"><p>从拉斯维加斯出发，坐直升机游览大峡谷，在河舟上沿着科罗拉多河顺流而下，这将是让你惊叹令你激动的一日游。</p></div>
+						</div>
+						<div class="wq_pinfo_wrapper" style="background-color: rgb(236, 248, 244);">
+							<p class="wq_ptitle">直升机+泛舟，体验大峡谷不一样的精彩</p>
+							<p class="wq_pprice"><span class="wq_price_num">$439</span><span class="wq_price_start">起</span></p>
+							<i class="wq_pdetail_btn"></i>
+						</div>
+					</a>
+            <a style="margin-left: 20px; color: rgb(51, 51, 51);" class="wq_product_item wq_clearfix" target="_self" href="http://www.woqu.com/mustactive-detail-via_2855kennedy" title="查看产品详情">
+						<div class="wq_pimg_wrapper">
+							<img width="320" height="240" src="images/index08.jpg" class="lazy" style="display: block;">
+							<div class="wq_hide_tips" style="display: none;"><p>参观NASA的航空航天设施，到阿波罗/土星V火箭中心看一看真实的火箭和发射台，亲身体验航天发射。升级行程，即可与宇航员共进午餐哦！</p></div>
+						</div>
+						<div class="wq_pinfo_wrapper" style="background-color: rgb(236, 248, 244);">
+							<p class="wq_ptitle">来一次虚拟的月球旅行吧，肯尼迪航天中心之旅</p>
+							<p class="wq_pprice"><span class="wq_price_num">$97</span><span class="wq_price_start">起</span></p>
+							<i class="wq_pdetail_btn"></i>
+						</div>
+					</a>
+            </div>
+            
+            <div class="fus_bottom  wq_clearfix">
+            <a class="wq_product_item wq_product_wide wq_clearfix" target="_self" href="#" title="查看产品详情" style="color: rgb(51, 51, 51);">
+						<div class="wq_pimg_wrapper">
+							<img width="660" height="240" src="images/index09.jpg" class="lazy" style="display: block;">
+							<div class="wq_hide_tips" style="display: none;"><p>坐潜艇到海底100英尺去探险，近距离欣赏海洋生物。购买巡航项目，享用豪华晚餐的同时，还能欣赏日落时分的怀基基海岸美景。</p></div>
+						</div>
+						<div class="wq_pinfo_wrapper" style="background-color: rgb(236, 248, 244);">
+							<p class="wq_ptitle">潜水艇探险+落日晚餐巡航，上天入水的夏威夷探秘之旅</p>
+							<p class="wq_pprice"><span class="wq_price_num">$214</span><span class="wq_price_start">起</span></p>
+							<i class="wq_pdetail_btn"></i>
+						</div>
+					</a>
+            <a style="margin-left: 20px; color: rgb(51, 51, 51);" class="wq_product_item wq_clearfix" target="_self" href="#" title="查看产品详情">
+						<div class="wq_pimg_wrapper">
+							<img width="320" height="240" src="images/index10.jpg" class="lazy" style="display: block;">
+							<div class="wq_hide_tips" style="display: none;"><p>背上喷气背包，在9米高空俯瞰风景如画的毛纳路尔湾。专业教练手把手，菜鸟也能轻松掌握转向、深水着陆等技能哦！</p></div>
+						</div>
+						<div class="wq_pinfo_wrapper" style="background-color: rgb(236, 248, 244);">
+							<p class="wq_ptitle">欧胡岛喷气背包体验之旅，来一次高空中的飞翔</p>
+							<p class="wq_pprice"><span class="wq_price_num">$210</span><span class="wq_price_start">起</span></p>
+							<i class="wq_pdetail_btn"></i>
+						</div>
+					</a>
+            
+            
+            </div>
+        </div>
+    </div>
+    <footer class="wq_footer_wrapper">
+	<div class="wq_footer">
+		<div class="wq_footer_top wq_clearfix">
+			<dl class="wq_ft_product">
+				<dt>优质出游</dt>
+				<dd>精挑细选千种选择</dd>
+			</dl>
+			<dl class="wq_ft_price">
+				<dt>保证低价</dt>
+				<dd>同款产品低价承诺</dd>
+			</dl>
+			<dl class="wq_ft_kefu">
+				<dt>7x24服务</dt>
+				<dd>行前行后全程相伴</dd>
+			</dl>
+			<dl class="wq_ft_safety">
+				<dt>安全支付</dt>
+				<dd>轻松、快捷、安全</dd>
+			</dl>
+			<dl class="wq_ft_fee">
+				<dt>透明消费</dt>
+				<dd>透明行程明白消费</dd>
+			</dl>
+		</div>
+		<div class="wq_footer_center">
+			<div class="wq_partner_wrapper">
+				<ul class="wq_clearfix">
+					<li class="wq_p_link label_link">合作伙伴：</li>
+					<li class="wq_p_link nta_link"><a target="_blank" href="#"></a></li>
+					<li class="wq_p_link lv_link"><a target="_blank" href="#"></a></li>
+					<li class="wq_p_link azot_link"><a target="_blank" href="#"></a></li>
+					<li class="wq_p_link la_link"><a target="_blank" href="#"></a></li>
+					<li class="wq_p_link paypal_link"><a target="_blank" href="#"></a></li>
+					<li class="wq_p_link zfb_link"><a target="_blank" href="#"></a></li>
+					<li class="wq_p_link cft_link"><a target="_blank" href="#"></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="wq_footer_bottom">
+			<p class="wq_link wq_clearfix">
+				<span><a href="#">关于我趣</a></span>
+				<span>|</span>
+				<span><a href="#">加入我们</a></span>
+				<span>|</span>
+				<span><a href="#">联系我们</a></span>
+				<span>|</span>
+				<span><a href="#">媒体动态</a></span>
+				<span>|</span>
+				<span><a href="#">合作伙伴</a></span>
+				<span>|</span>
+				<span><a href="#">服务条款</a></span>
+				<span>|</span>
+				<span><a href="#">帮助中心</a></span>
+			</p>
+			<p class="wq_copyright"><span style="font-family: arial;">Copyright<span title="10-7-22-223">&copy;</span>2013 WOQU.com All Rights Reserved </span> 我趣旅行网  版权所有 <a target="_blank" href="#">粤ICP备13084118号</a></p>
+			<ul class="wq_cert_list wq_clearfix">
+				<li><a target="_blank" href="#" class="wq_360cert"></a></li>
+				<li><a target="_blank" href="#" class="wq_geocert"></a></li>
+				<li><a target="_blank" href="#" class="wq_alipay"></a></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+	<ul class="wq_bubble_list wq_clearfix">
+	<li class="wq_kefu_animate" style="display: list-item; right: -100px;"></li>
+	<li class="wq_kefu_item dis-visibility">
+		<a target="_blank" href="#" id="qqKefu"></a>
+	</li>
+	<li class="wq_kefu_item dis-visibility">
+		<a target="_blank" href="#" id="onlineKefu"></a>
+	</li>
+	<li class="wq_mycart_list">
+		<a class="wq_my_cart wq_empty_cart" id="myCart"><em class="wq_cartProductNum" id="cartProductNum"></em></a>
+		<div id="cartDrawer"></div>
+		<ul id="mycart_ul" class="wq_mc_list" style="display: none;">
+        	<li class="wq_mc_empty">购物车中还没有产品！</li>
+			<li class="wq_mc_loading"></li>
+		</ul>
+	</li>
+	<li class="wq_search_product">
+		<a id="searchProduct"></a>
+		<div class="wq_sp_form" style="display: none;">
+			<input type="text" id="searchInput" value="输入产品编码" style="color: rgb(132, 132, 132);">
+			<span id="searchProductSpan"></span>
+			<a href="#" id="searchBtn">查询</a>
+		</div>
+	</li>
+	<li>
+		<a title="意见反馈" id="feedBack"></a>
+	</li>
+	<li class="wq_to_top" style="display: none;">
+		<a id="toTop"></a>
+	</li>
+</ul>
+	
+</body>
+</html>

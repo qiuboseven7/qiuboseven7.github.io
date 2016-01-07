@@ -1,0 +1,85 @@
+﻿/*css reset*/
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}
+body,button,input,select,textarea{font:12px arial,\5b8b\4f53}
+h1,h2,h3,h4,h5,h6{font-size:100%; font-weight:lighter; font-family:微软雅黑;color:#3c3c3c}
+address,cite,dfn,em,var{font-style:normal}
+form{display:inline}
+small{font-size:12px}
+ul,ol{list-style:none}
+a{text-decoration:none; color:#3c3c3c;font-family:微软雅黑}
+a:hover{ color:#FF6600; text-decoration:underline}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+legend{color:#000}
+fieldset,img{border:0;-ms-interpolation-mode:bicubic}
+button,input,select,textarea{font-size:100%;font-weight:lighter;}
+table{border-collapse:collapse;border-spacing:0}
+
+/*common*/
+.clear{clear:both}
+.wx,.dh,.foota1,.foota2,.foota3,.li1 span,.li2 span,.li3 span,.li4 span,.copy span,.footer3 span,.copy span{ background:url(../images/tcCommon_01.png) no-repeat}
+
+/*header*/
+#header{width:1200px; height:148px;}
+.ztc{ height:30px; background-color:#FAFAFA; border-bottom:#CCC solid 1px}
+.ztc_m{ width:1200px; height:30px;line-height:30px; margin:0 auto}
+.ztc_l{ float:left; }
+.ztc_l code{ color:#F90}
+.ztc_r{ float:right; overflow:hidden}
+.ztc_r a{ position:relative;padding:0 15px}
+.wx{ width:22px ; height:15px; /*position:absolute; top:1px; right:38px;*/display:inline-block; background-position:-35px  0}
+.dh{width:22px ; height:15px;/*position:absolute; top:8px; right:144px;*/display:inline-block; background-position:0  0}
+
+.logo{ width:1200px; height:78px; margin:0 auto}
+.logoimg{ float:left; margin-top:10px }
+.ab{ float:right;margin-top:10px}
+
+.nav{ height:40px; background-color:#2DA1E7}
+.nav_m{width:1200px; height:40px; font-size:16px; overflow:hidden; position:relative;margin:0 auto}
+.nav_n {/*width:1000px;*/}
+.nav_n a{  display:inline-block;  float:left; border-top:2px solid #2DA1E7; text-align:center; width:80px; height:36px; line-height:40px;color:#FFF;}
+.nav_padding{padding:0 19px;}
+.nav_top{ display:block; width:53px; height:20px; color:#fff; font-size:12px; background:url(../images/nav_tip_01.png) no-repeat; position:absolute; top:-17px; left:352px; z-index:1; padding:0 2px }
+.nav_top2{top:-17px; left:454px; padding:0 10px}
+.nav_n a:hover{ background-color:#ffffff;color:#3c3c3c; text-decoration:none; height:38px; border-top:2px solid #F93;}
+.nac_btn{ float:right;color:#ffffff; display:block; text-align:center; line-height:40px;  background-color:#F93; width:90px; height:40px; padding:0 15px; float:right}
+.nac_btn span{ background:url(../images/huiyuan_tip_01.png) no-repeat; display:block; margin-top:10px; height:17px; width:16px; float:left}
+.nac_btn:hover{ color:#FFF; text-decoration:none}
+
+
+
+/*footer*/
+#footer{ width:100%; overflow:hidden; background-color:#F5F5F5}
+.footer{ width:1200px; margin:10px auto; overflow:hidden}
+.footer1{ width:158px; float:left; overflow:hidden;}
+.footer1 h2{ font-size:16px; padding-bottom:10px}
+.footer1 li a{display:block;padding-top:5px; width:90px; height:28px;}
+.foota1{ background-position:0 -53px}
+.foota2{background-position:0 -93px} 
+.foota3{background-position:0 -133px} 
+
+.footer2{ width:132px; float:left;}
+.footer2 h2{ font-size:16px; padding-bottom:10px}
+.footer2  a{ line-height:25px; color:#999999}
+.footer3{ width:302px;}
+.footer3  li{  line-height:25px; overflow:hidden; color:#999999}
+.footer3 span{ display:block; width:18px; height:30px; float:left; background-position:0 -15px}
+.footer3 font{ float:left} 
+.footer4{ width:296px; float:left; margin-left:10px}
+.footer4 h2{font-size:16px; padding-bottom:10px}
+.footer4 li{ width:135px; height:55px; background-color:#fff; margin: 0 8px  10px 0; float:left; color:#999} 
+
+.footer4 span{ margin:8px 0 0 8px ; float:left; display:block;height:41px;width: 40px; }
+.footer4 li a{ line-height:18px; margin-top:10px; overflow:hidden; display:block;  width:75px}
+.li1 span{background-position:-42px -482px}
+.li2 span{width:36px; background-position:0 -266px}
+.li3 span{ background-position:0 -318px}
+.li4 span{ background-position:0 -480px}
+
+.copy{ margin:0 auto; height:50px;font-size:12px;line-height:45px;   width:800px;_width:820px; margin:0 auto; text-align:center; color:#999;}
+.copy font{ display: block; width:750px;_width:760px; height:50px; float:left; font-size:12px}
+.copy span{ width:50px; height:50px; float:right; background-position:-36px -266px;}
+.lj{ margin:0 auto; line-height:20px; height:20px; overflow:hidden;color:#999; width:850px;}
+.lj strong{ float:left}
+.lj a{ color:#999; float:left; margin-right:6px} 
+.lj_mar{ padding-left:130px }

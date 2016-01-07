@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin:0; padding:0; list-style:none;}
+.fl{float:left;}
+.fr{float:right;}
+a{text-decoration:none; font-size:"微软雅黑";}
+html{font-size:32px;}
+.header{width:10rem; height:1.578125rem; background:#ccc; overflow:hidden;}
+.header .back{float:left;}
+.header .back a{display:block; width:1.96875rem; margin:0.34375rem; height:0.9375rem; background:url(images/fh.png) no-repeat;}
+.header .title{display:block; width:2.3125rem; height:0.609375rem; background:url(images/logo.png) no-repeat; margin:0.46875rem 0 0 3.84375rem;}
+
+.content{font-family:"微软雅黑";}
+.content .tab{width:100%; overflow:hidden;}
+
+.content .tab ul{width:2000px; height:4.1875rem;}
+.content .tab ul li{width:10rem; height:4.1875rem;}
+.content .tab ul li img{width:100%; height:100%;}
+.content .tab ol{width:1.40625rem; margin:0.328125rem auto; overflow:hidden;}
+.content .tab ol li{float:left; width:0.15625rem; height:0.15625rem; margin-right:0.15625rem; background:#a9a9a9; border-radius:50%;}
+.content .tab ol li:nth-last-of-type(1){margin:0; background:#f40;}
+
+.content .sel{width:9.53125rem; padding:0 0.234375rem; overflow:hidden; margin-bottom:0.34375rem;}
+.content .sel li{float:left; width:1.25rem; height:1.875rem; padding:0.3125rem 0.5625rem;}
+.content .sel li div{width:1.25rem; height:1.25rem; background:#ff3900; border-radius:50%; margin-bottom:0.28125rem;}
+.content .sel li div img{width:0.59375rem; height:0.59375rem; margin:0.3125rem 0 0 0.3475rem;}
+.content .sel li p{font-size:0.34375rem; color:#999; text-align:center;}
+
+.content .seller{width:9.375rem; padding:0 0.3125rem; margin:0 auto; overflow:hidden;}
+.content .seller .title{width:100%; height:0.46875rem; padding:0.3125rem 0; overflow:hidden; font-size:0.40625rem; border-bottom:0.03125rem solid #dcdcdc; margin-bottom:0.484375rem;}
+.content .seller .title .line{height:0.46875rem; padding-left:0.28125rem; border-left:0.03125rem solid #d51938;}
+.content .seller .title .top{font-family:"Arial";}
+.content .seller .ranking{}
+.content .seller .ranking li{width:9.375rem; height:1.875rem; margin-bottom:0.3125rem; background:#f4f4f4;}
+.content .seller .ranking li .left{display:block; width:0.9375rem; height:100%; background:#e00202; color:#fff; text-align:center; line-height:1.875rem; font-family:"Arial";font-size:0.5625rem;}
+.content .seller .ranking li img{display:block; width:2.8125rem; height:100%;}
+.content .seller .ranking li .right{width:5.625rem; height:100%; overflow:hidden; font-size:0.375rem; color:#999;}
+.content .seller .ranking li .right .zuo{ width:2.25rem; height:1.40625rem; padding:0.46875rem 0 0 0.34375rem;}
+.content .seller .ranking li .right .zuo .price{font-size:0.28125rem; padding-left:0.40625rem; text-decoration:line-through;}
+.content .seller .ranking li .right .you{ font-size:0.40625rem; color:#d51938; padding:0.625rem 0.3125rem 0 0;}
+
+.content .more{width:9.375rem; height:1.25rem; line-height:1.25rem; margin:0 auto; margin-bottom:0.34375rem; background:#f5f5f5; text-align:center; font-size:0.40625rem; color:#666;}
+.content .con{width:9.375rem; height:5.5rem; line-height:1.25rem; margin:0 auto; margin-bottom:0.34375rem; font-size:0.40625rem;}
+.content .con .shopping{width:2.34375rem; height:5.5rem; font-size:0.40625rem; background:#ff3900;}
+.content .con .sh{background:#8bca11;}
+.content .con .pp{background:#838383;}
+.content .con .shopping p{width:100%; height:1.25rem; line-height:1.25rem; text-align:center; color:#fff;}
+.content .con .shopping span{position:relative; display:block; width:100%; height:4.25rem;}
+.content .con .shopping img{position:absolute; left:0; bottom:0; width:1.609375rem; height:2.09375rem;}
+.content .con .shopping .shp{position:absolute; left:0; bottom:0; width:1.8125rem; height:2.53125rem;}
+.content .con .shopping .ppp{position:absolute; left:0; bottom:0; width:1.8125rem; height:2.140625rem;}
+.content .con .nav{width:7.03125rem; height:5.5rem; font-size:0.40625rem; border-top:0.015625rem solid #eee; overflow:hidden;}
+.content .con .nav li{float:left;}
+.content .con .nav li a{display:block; width:2.328125rem; height:1.359375rem; line-height:1.359375rem; border-bottom:0.015625rem solid #eee; border-right:0.015625rem solid #eee; text-align:center; color:#999;}
+.content .con .nav li a.red{color:#d51942;}
+
+.content .pinpai{width:9.53125rem; padding:0 0.234375rem; overflow:hidden; margin-bottom:0.34375rem;}
+.content .pinpai ul{overflow:hidden;}
+.content .pinpai ul li{float:left; width:3.125rem; height:2.5rem;}
+.content .pinpai ul li img{display:block; width:3.125rem; height:2.5rem;}
+

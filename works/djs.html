@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>倒计时</title>
+<style>
+*{margin:0; padding:0; list-style:none;}
+.time{width:350px; height:365px; background:url(images/russia2018.jpg) no-repeat; position:relative; margin:100px auto;}
+.time .fill_in{ font-size: 18px; color: #fff; font-weight: bold; position: absolute; top: 330px; left: 50px; }
+.time .fill_in input { background: none; border: 0; text-align: center; font-weight: bold; font-size: 18px; color:#FF0; float: left; overflow: hidden;height: 18px; line-height: 18px; position: relative; top: 8px; }
+.time .fill_in span { float: left; padding-top: 4px; text-align:center; }
+.time .fill_in .long_text { width: 80px;  }
+.time .fill_in .text { width: 40px; }
+.time .fill_in .space1 { width: 25px; }
+.time .fill_in .space2 { width: 25px; }
+.time .fill_in .space3 { padding-left: 8px;}
+.time .ds{ position:absolute; left:20px; top:225px; font-size:18px; color:#fff;}
+.time .ds span{font-size:25px; color:#ff0; font-family:'Arial';}
+.time .ds .sp{font-size:20px; color:#ff0; font-family:'黑体';}
+</style>
+<script src="js/jquery-1.7.2.js"></script>
+<script src="js/common.js"></script>
+<script src="js/djs.js"></script>
+</head>
+
+<body>
+<div id="time" class="time fr">
+        <div class="fill_in">
+                <input type="text" class="long_text" value="2018" />
+                <span class="space1">年</span>
+                <input type="text" class="text" value="6" />
+                <span class="space2">月</span>
+                <input type="text" class="text" value="14" />
+                <span class="space3">日</span>
+         </div>
+         <div id="ds" class="ds">
+                <span class="sp">倒计时:</span>
+                <span></span> 天 
+                <span></span> 时 
+                <span></span> 分 
+                <span></span> 秒
+         </div>
+</div>
+</body>
+</html>

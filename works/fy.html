@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>翻页效果</title>
+<style>
+*{margin:0; padding:0; list-style:none;}
+#real{ position:relative;width:500px; height:300px; background:url(images/0.jpg) no-repeat; margin:100px auto;}
+#real .page2{ position:absolute;right:0;top:0;width:50%; height:100%; background:url(images/1.jpg) no-repeat right center;}
+
+#real .page1{ position:absolute;right:0;top:0;width:50%; height:100%; z-index:5;
+	transform:perspective(800px) rotateY(0);
+	transform-origin:left center;
+	transform-style:preserve-3d;
+}
+#real .page1 div{ position:absolute;right:0;top:0;width:100%; height:100%;}
+#real .page1 .front{ background:url(images/0.jpg) no-repeat right center; transform:translateZ(1px); z-index:2;}
+#real .page1 .back{ background:url(images/1.jpg) no-repeat;transform:translateZ(-1px) scale(-1,1); z-index:1;}
+</style>
+<script src="js/jquery-1.7.2.js"></script>
+<script src="js/fy.js"></script>
+</head>
+
+<body>
+<div id="real" class="real">
+        <div class="page1">
+                <div class="front"></div>
+                <div class="back"></div>
+        </div>
+        <div class="page2"></div>
+</div>
+</body>
+</html>
